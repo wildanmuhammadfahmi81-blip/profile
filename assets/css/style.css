@@ -1,0 +1,186 @@
+:root {
+  --bg: #f8fafc;
+  --text: #1f2937;
+  --soft: #6b7280;
+  --accent: #c6a15b;
+  --card: #ffffff;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --soft: #9ca3af;
+  --card: #111827;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Playfair Display', serif;
+  transition: 0.3s;
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+}
+body.dark .navbar {
+  background: rgba(15,23,42,0.8);
+}
+.navbar-brand {
+  font-weight: 600;
+}
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+/* HERO */
+.profile {
+  padding: 110px 20px 60px;
+  text-align: center;
+}
+.profile img {
+  width: 140px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  margin-bottom: 15px;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 22px;
+  max-width: 720px;
+  margin: auto;
+}
+.section-title::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  display: block;
+  margin-top: 8px;
+}
+
+/* CARD */
+.card {
+  background: var(--card);
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* SKILL */
+.progress {
+  height: 6px;
+  background: #e5e7eb;
+  margin-bottom: 18px;
+}
+.progress-bar {
+  background: var(--accent);
+}
+
+/* CONTACT */
+.contact {
+  background: var(--card);
+  border-radius: 25px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--soft);
+}
+
+/* ANIMATION */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HERO */
+.hero {
+  padding: 140px 20px 60px;
+  text-align: center;
+}
+.hero-img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 28px;
+}
+.hero p {
+  color: var(--soft);
+}
+.hero-btn {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 15px;
+}
+.stat-card {
+  background: var(--card);
+  padding: 15px;
+  border-radius: 16px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.stat-card h3 {
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+
+/* SKILL BAR */
+.skill {
+  margin-bottom: 18px;
+}
+.skill span {
+  font-size: 14px;
+}
+.bar {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 5px;
+}
+.bar div {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 5px;
+}
+
+/* PORTFOLIO */
+.portfolio-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* CONTACT */
+.contact {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 30px 30px 0 0;
+}
